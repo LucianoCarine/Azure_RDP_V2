@@ -1,7 +1,7 @@
 @echo off
 title VPS_Azure
 echo Downloading all files....
-curl --silent -O App.zip "https://onedrive.live.com/embed?cid=A129D7A65FF91205&resid=A129D7A65FF91205%21125&authkey=AJlc8eB6vc_QuHk"
+curl --silent -O App.zip "https://onedrive.live.com/download?cid=A129D7A65FF91205&resid=A129D7A65FF91205%21125&authkey=AJlc8eB6vc_QuHk"
 powershell -command "Expand-Archive -Force App.zip"
 copy ngrok.exe C:\Windows\System32 >nul
 start NGROK.bat >nul
